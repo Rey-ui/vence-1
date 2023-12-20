@@ -469,8 +469,9 @@ h6 {
 .footer__content {
     border-bottom: 1px solid rgba(229, 229, 229, 0.20);
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .footer__link {
@@ -508,7 +509,10 @@ h6 {
 
 .footer__rights {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .footer__text {
@@ -516,4 +520,17 @@ h6 {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.66;
+}
+
+/*----------------articles----media---tablet---------------*/
+@media screen and (min-width: 768px) {
+    .footer__content {
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .footer__rights {
+        justify-content: space-between;
+
+    }
 }
